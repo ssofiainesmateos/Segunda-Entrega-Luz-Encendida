@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@100;300;400;500&display=swap');
+
+/* Header */
+
+.header {
+    background-color: black;
+    height: 250px;
+    width: 100%;
+}
+
+/* Título del sitio */
+
+.titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10% 0% 2% 0%;
+}
+
+/* Menú */
+
+.menu {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(244, 235, 235);
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: background-color 2s;
+}
+
+.menu li {
+    list-style: none;
+    padding: 2px 30px;
+}
+
+.menu:hover{
+    background-color: rgb(233, 209, 209);
+}
+
+.menu a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu a:hover{
+}
+
+/* Main */
+
+.main{
+    margin: 4% 2%;
+
+}
+
+.secciones{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    color: rgb(94, 25, 25);
+    font-weight: 200;
+    padding-top: 1.5rem;
+}
+
+
+.titulos_principales{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    color: black;
+    margin: 1rem 0rem;
+    font-weight: 500;
+    align-items: center;
+    transition: color 2s;
+}
+
+.titulos_principales:hover{
+    color: rgb(0, 12, 119);
+}
+
+.imagenes_index{
+    max-width: 300px;
+    max-height: 180px;
+    border-radius: 2px;
+    border-color: white;
+}
+/* 
+.imagenes_index:hover{
+    border-color: black; border-radius: 3px;
+} */
+
+/* Seccion críticas en el index */
+
+.criticas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items:start;
+}
+
+.criticas_box_4{
+    padding-left: 2rem;
+}
+
+/* Seccion Actualidad en el index*/
+
+.actualidad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: start;
+}
+
+/* Seccion newsletter */
+
+.newsletter{
+    display: grid;
+    width: 100%;
+    margin: 3rem 0rem;
+    background-color: black;
+    grid-template-areas: 
+    "foto titulo"
+    "foto subtitulo"
+    "foto descripcion"
+    "boton boton";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.5fr) 20%;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(244, 235, 235);
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.newsletter_img{
+    grid-area: foto;
+    max-width: 50%;
+    padding: 3rem 1rem;
+    justify-self: center;
+    animation-name: imagen_deslizandose;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+.newsletter_titulo{
+    grid-area: titulo;
+    font-size: 2rem;
+    justify-self: start;
+    margin:0rem 5rem;
+}
+
+.newsletter_subtitulo{
+    grid-area: subtitulo;
+    font-size: 1.5rem;
+    justify-self: start;
+    margin:0rem 5rem;
+}
+
+.newsletter_descripcion{
+    grid-area: descripcion;
+    font-size: 1rem;
+    font-weight: 300;
+    color: antiquewhite;
+    justify-self: start;
+    text-align: justify;
+    margin:0rem 5rem;
+}
+
+.newsleter_link{
+    grid-area: boton;
+    max-width:20%;
+    background-color: black;
+    border-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 1rem;
+    justify-self: center;
+    transition: font-size 2s;
+}
+
+.newsleter_link i{
+    color:white;
+}
+
+.newsleter_link:hover{
+    font-size: 1.2rem;
+}
+
+/* Seccion De interés en el index*/
+
+.galeria_posters{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 0.5%;
+}
+
+.poster_1{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_3{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_4{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_5{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_6{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_7{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_8{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_9{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_10{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_11{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_12{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_13{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_14{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_15{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_16{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_17{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.poster_18{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.de_interes img{
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.galeria_posters img{
+    border-radius: 0%;
+    border-color: white;
+    opacity: 100%;
+    transition: border-radius 1s, opacity 2s;
+}
+.galeria_posters img:hover{
+    border-radius: 3%; opacity: 75%;
+}
+
+.galeria_boton_ver_mas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.boton_flecha_ver_mas{
+    border:white;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1% 1%;
+    border-color: white;
+    border-radius: 1px;
+    transition: font-size 2s;
+}
+
+.boton_flecha_ver_mas i{
+    color:black;
+    }
+
+.boton_flecha_ver_mas:hover{
+    font-size: 1.2rem;;
+}
+
+/* Footer */
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 25rem;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+.otras_secciones_footer{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 25%;
+
+}
+
+.footer h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: antiquewhite;
+    padding: 1% 8%;
+    /* transition: color; */
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    color:antiquewhite;
+    justify-content: space-around;
+    margin:0% 40%;
+}
+
+.redes i{
+    font-size: 1.5rem;
+    transition: font-size 2s;
+}
+
+.redes i:hover{
+    font-size: 1.8rem;
+}
+
+.copyright{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: antiquewhite;
+    text-align: center;
+    margin: 10% 45% 0% 45%;
+}
+
+/* Títulos e imagenes en las páginas Acerca de, Actualidad, Críticas y Contacto */
+
+.seccion_sitio{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    padding: 10px;
+    margin: 5% 0% 2% 2%;
+}
+
+.titulos_entradas{
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    color: black;
+    margin: 1% 55% 2% 5%;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.autor_entrada{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 5%;
+}
+
+/* Párrafos en las páginas de Acerca de, Actualidad, Críticas y Contacto */
+
+.main p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 10px;
+    color: black;
+    margin: 1% 45% 1% 5%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/* Imágenes en los html de Acerca de, Actualidad, Críticas y Contacto */
+
+.imagenes_principales{
+    max-width: 650px;
+    margin: 2% 45% 2% 5%;
+}
+
+/* Formulario contacto */
+
+.formulario_contacto{
+    margin: 5%;
+}
+
+.titulo_formulario{
+    margin-top: 10%;
+}
+
+
+@keyframes imagen_deslizandose{
+    0%{
+        transform: translateX(-80px);
+    }
+
+    100%{
+        transform: translateX(70px);
+    }
+}
