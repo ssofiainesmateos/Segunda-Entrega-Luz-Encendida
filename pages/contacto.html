@@ -33,24 +33,28 @@
         </ul>
     </header>
 
-    <h2 class="titulos_principales titulo_formulario" >¿QUERÉS SER PARTE Y CONTRIBUIR A ESTE PROYECTO?</h2>
+    <main>
+        <div class="texto_formulario">
+            <h2 class="titulos_principales titulo_formulario" >¿QUERÉS SER PARTE Y CONTRIBUIR A ESTE PROYECTO?</h2>
+            <p class="texto_formulario">Desde Luz Encendida apostamos por las distintas miradas. Si tenés una idea para una crítica, ensayo, recopilación, video o cualquier otro contenido relacionado, contactanos.</p>
+        </div>
 
     <!-- Formulario -->
 
-    <form action="procesar.php" method="POST" class="formulario_contacto">
+        <form class="formulario_contacto" action="procesar.php" method="POST" class="formulario_contacto">
 
-            <input type="text" name="NOMBRE" id="" placeholder="Nombre">
+            <input class="caja_texto" type="text" name="Nombre" id="" placeholder="Nombre">
 
-            <input type="text" name="EMAIL" id="" placeholder="Email" required>
+            <input class="caja_texto" type="text" name="Email" id="" placeholder="Email" required>
 
-            <input type="text" name="ASUNTO" id="" placeholder="Asunto">
+            <input class="caja_texto" type="text" name="Asunto" id="" placeholder="Asunto">
 
-            <input type="text" name="CONTANOS TU IDEA PARA UNA CRÍTICA, ENSAYO,
-            RECOPILACIÓN, LISTA, VIDEO, ETC." id="" placeholder="Contanos tu idea">
+            <input class="caja_texto" type="text" name="Idea" id="" placeholder="Contanos tu idea">
 
-            <input type="button" value="Adjuntar archivo">
-            <input type="submit" value="Enviar">
+            <input class="formulario_botones formulario_boton_adjuntar" type="button" value="Adjuntar archivo">
+            <input class="formulario_botones formulario_boton_enviar" type="submit" value="Enviar">
         </form>
+    </main>
 
 <!-- Footer -->
     <footer class="footer">
